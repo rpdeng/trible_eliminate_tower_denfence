@@ -14,7 +14,11 @@
         android:theme="@style/AppTheme" >
         <activity
             android:label="@string/app_name"
-            android:name=".MainActivity" >
+            android:configChanges="orientation|keyboardHidden"
+			android:launchMode="singleTask"
+			android:screenOrientation="sensorLandscape"
+			android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+			android:name=".MainActivity" >
             <intent-filter >
                 <action android:name="android.intent.action.MAIN" />
 
